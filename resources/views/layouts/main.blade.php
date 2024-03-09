@@ -16,7 +16,11 @@
         @yield('content-auth')
     @else
         <main class="dashboard">
-            @include('components.sidebar')
+            @if (Route::is('homepage.show*'))
+                @include('components.sidebar-agenda')
+            @else
+                @include('components.sidebar')
+            @endif
             @yield('content-dashboard')
         </main>
     @endif
