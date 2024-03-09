@@ -148,7 +148,9 @@ form.form .button-group {
 .button-primary,
 .button-primary-small,
 .button-reverse,
-.button-reverse-small {
+.button-reverse-small,
+.button-reverse-sub-module,
+.button-primary-sub-module {
     padding: 16px 18px;
     background-image: var(--background-color-gradient);
     border-radius: 6px;
@@ -164,18 +166,26 @@ form.form .button-group {
 }
 
 .button-reverse,
-.button-reverse-small {
+.button-reverse-small,
+.button-reverse-sub-module {
     background-image: none;
     background-color: rgba(var(--third-dark-color), 1);
     border: 1px solid transparent;
 }
 
-.button-reverse-small {
+.button-reverse-small,
+.button-reverse-sub-module {
     padding: 12px 18px;
     font-size: 0.813rem;
     color: rgba(var(--light-color), 1);
     border: 1px solid rgba(var(--light-color), 0.12);
     background-color: transparent;
+}
+
+.button-reverse-sub-module,
+.button-primary-sub-module {
+    padding: 11px 12px;
+    font-size: 0.75rem;
 }
 
 .button-reverse-small:hover,
@@ -184,8 +194,15 @@ form.form .button-group {
     transition: var(--transition-duration);
 }
 
+.button-reverse-sub-module:hover,
+.button-reverse-sub-module.active {
+    background-color: rgba(var(--third-dark-color), 1);
+    transition: var(--transition-duration);
+}
+
 .button-primary:hover,
-.button-primary-small:hover {
+.button-primary-small:hover,
+.button-primary-sub-module:hover {
     box-shadow: 0 6px 12px rgba(var(--light-color), 0.12);
 }
 
@@ -468,7 +485,8 @@ form.form .button-group {
     transition: var(--transition-duration);
 }
 
-.sidebar .item-child .child-item:hover {
+.sidebar .item-child .child-item:hover,
+.sidebar .item-child .child-item.active {
     color: rgba(var(--light-color), 1);
 }
 
@@ -535,8 +553,19 @@ form.form .button-group {
     overflow-x: hidden;
 }
 
+.dashboard .margin-sidebar {
+    margin-left: 260px;
+}
+
+@media (max-width: 991.98px) {
+    .dashboard .margin-sidebar {
+        margin-left: 0;
+    }
+}
+
 .dashboard-content {
     padding: 32px 42px;
+    padding-right: 52px;
 }
 
 .dashboard-content .wrapper {
@@ -651,7 +680,8 @@ form.form .button-group {
 
 @media (max-width: 767.98px) {
     .dashboard-content {
-        padding: 24px;
+        padding: 14px;
+        padding-right: 24px;
     }
 }
 /* END DASHBOARD */
@@ -1067,4 +1097,41 @@ footer.copyright p {
     color: rgba(var(--light-color), 0.52);
 }
 /* END COPYRIGHT */
+
+/* DASHBOARD AGENDA */
+.dashboard .card-agenda {
+    padding: 20px;
+    background-color: rgba(var(--second-dark-color), 1);
+    border-radius: 10px;
+}
+
+.dashboard .card-agenda .sub-module {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(var(--light-color), 0.12);
+}
+
+.dashboard .card-agenda .sub-module:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.dashboard .card-agenda .sub-module .sub-module-title {
+    font-size: 1.125rem;
+    color: rgba(var(--light-color), 1);
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.dashboard .card-agenda .sub-module .sub-module-paragraph {
+    font-size: 0.913rem;
+    color: rgba(var(--light-color), 0.52);
+    line-height: 150%;
+}
+
+.dashboard .card-agenda .sub-module .button-group {
+    margin-top: 24px;
+}
+/* END DASHBOARD AGENDA */
 /* END HOMEPAGE */
