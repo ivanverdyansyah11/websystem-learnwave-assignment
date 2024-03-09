@@ -14,8 +14,6 @@
 <body>
     @if (Route::is('login'))
         @yield('content-auth')
-    @elseif(Route::is('homepage'))
-        @yield('content-homepage')
     @else
         <main class="dashboard">
             @include('components.sidebar')
