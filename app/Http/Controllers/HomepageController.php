@@ -11,4 +11,10 @@ class HomepageController extends Controller
             'title' => 'Homepage Page',
         ]);
     }
+
+    public function show(int $id) {
+        return view('homepage.agenda', [
+            'title' => 'Agenda Page',
+        ]);
+    }
 }
