@@ -195,10 +195,10 @@
                             </div>
                             <h6 class="card-adventage-title">Free Learning Materials</h6>
                             <p class="card-adventage-paragraph">Enjoy the advantage of access to a wealth of high-quality, free learning materials on our platform.</p>
-                            <a href="#" class="card-adventage-link d-flex align-items-center gap-2">
+                            <button type="button" class="card-adventage-link d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#adventageOneModal">
                                 More Detail
                                 <img src="{{ asset('assets/images/icon/arrow-primary.svg') }}" alt="Arrow Primary" width="24">
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="col mb-4">
@@ -208,10 +208,10 @@
                             </div>
                             <h6 class="card-adventage-title">Access Anywhere</h6>
                             <p class="card-adventage-paragraph">Experience the unparalleled convenience of Learn Wave's C++ learning module.</p>
-                            <a href="#" class="card-adventage-link d-flex align-items-center gap-2">
+                            <button type="button" class="card-adventage-link d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#adventageTwoModal">
                                 More Detail
                                 <img src="{{ asset('assets/images/icon/arrow-primary.svg') }}" alt="Arrow Primary" width="24">
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="col mb-4">
@@ -221,10 +221,10 @@
                             </div>
                             <h6 class="card-adventage-title">Updated Material</h6>
                             <p class="card-adventage-paragraph">Stay at the forefront of C++ programming with the Learn Wave advantage of continuously updated.</p>
-                            <a href="#" class="card-adventage-link d-flex align-items-center gap-2">
+                            <button type="button" class="card-adventage-link d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#adventageThreeModal">
                                 More Detail
                                 <img src="{{ asset('assets/images/icon/arrow-primary.svg') }}" alt="Arrow Primary" width="24">
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="col mb-4">
@@ -234,10 +234,10 @@
                             </div>
                             <h6 class="card-adventage-title">Mini Project Exercise</h6>
                             <p class="card-adventage-paragraph">Elevate your C++ proficiency with the unique Learn Wave advantage of Mini Project Exercises.</p>
-                            <a href="#" class="card-adventage-link d-flex align-items-center gap-2">
+                            <button type="button" class="card-adventage-link d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#adventageFourModal">
                                 More Detail
                                 <img src="{{ asset('assets/images/icon/arrow-primary.svg') }}" alt="Arrow Primary" width="24">
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -441,6 +441,7 @@
     </footer>
     {{-- END COPYRIGHT --}}
 
+    @include('partials.adventage')
     {{-- SCRIPT JS --}}
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery-3.7.1.slim.min.js') }}"></script>
