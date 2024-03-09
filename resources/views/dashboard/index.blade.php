@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
 @section('content-dashboard')
-    <div class="row">
-        <div class="offset-lg-3 offset-xl-2 col">
+    <div class="row margin-sidebar">
+        <div class="col">
             <div class="dashboard-content">
                 <div class="wrapper d-flex justify-content-between align-items-center">
                     <h3 class="title mb-0">{{ $title }}</h3>
