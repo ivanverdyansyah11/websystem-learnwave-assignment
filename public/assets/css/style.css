@@ -548,6 +548,10 @@ form.form .button-group {
     color: rgba(var(--light-color), 1);
 }
 
+.modal.modal-adventage .modal-content .title {
+    font-family: var(--roboto-mono-bold);
+}
+
 .modal .modal-content .form {
     margin-top: 24px;
 }
@@ -556,6 +560,10 @@ form.form .button-group {
     font-size: 0.913rem;
     color: rgba(var(--light-color), 0.52);
     line-height: 150%;
+}
+
+.modal.modal-adventage .modal-content .paragraph {
+    margin-top: 24px;
 }
 /* END MODAL */
 
@@ -899,6 +907,9 @@ section.adventage .card-adventage .card-adventage-link {
     font-size: 0.813rem;
     color: rgba(var(--primary-color), 1);
     transition: var(--transition-duration);
+    background-color: transparent;
+    border: none;
+    stroke: none;
 }
 
 section.adventage .card-adventage .card-adventage-link img {
