@@ -27,7 +27,7 @@
                     <a href="{{ route('homepage.index') }}" class="link-item active">Home</a>
                     <a href="#agenda" class="link-item">Agenda</a>
                     <a href="#about" class="link-item">About Us</a>
-                    <a target="_blank" href="https://discord.gg/8vR7C2kf" class="link-item">Join Community</a>
+                    <a target="_blank" href="https://discord.gg/8vR7C2kf" class="link-item d-inline-block d-lg-none">Join Community</a>
                 </div>
                 <a target="_blank" href="https://discord.gg/8vR7C2kf" class="button-primary-small d-none d-lg-flex align-items-center gap-2">
                     Join Community

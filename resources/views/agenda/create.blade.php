@@ -5,7 +5,7 @@
         <div class="offset-lg-3 offset-xl-2 col">
             <div class="dashboard-content">
                 <div class="wrapper d-flex justify-content-between align-items-center">
-                    <h3 class="title mb-0">Edit Agenda</h3>
+                    <h3 class="title mb-0">Add New Agenda</h3>
                     @include('components.hamburger')
                 </div>
                 <div class="row">
@@ -27,8 +27,8 @@
                                     <textarea required rows="4" class="input" id="description" placeholder="Enter module description.." autocomplete="off"></textarea>
                                 </div>
                                 <div class="button-group d-flex gap-2">
-                                    <button type="submit" class="button-primary">Save Changes</button>
-                                    <a href="{{ route('agenda.index') }}" class="button-reverse">Cancel Edit</a>
+                                    <button type="submit" class="button-primary">Add New Agenda</button>
+                                    <a href="{{ route('agenda.index') }}" class="button-reverse">Cancel Add</a>
                                 </div>
                             </form>
                         </div>
