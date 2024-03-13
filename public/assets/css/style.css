@@ -65,6 +65,23 @@
     color: rgba(var(--light-color), 0.52);
 }
 
+html::-webkit-scrollbar {
+    width: 18px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgba(var(--light-color), 0.02);
+    border-left: 1px solid rgba(var(--light-color), 0.12);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--light-color), 0.06);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(var(--light-color), 0.12);
+}
+
 body {
     background-color: rgba(var(--dark-color), 1);
     overflow-x: hidden;
@@ -131,6 +148,7 @@ form.form label.button-file {
     margin-bottom: 0;
     font-size: 0.875rem !important;
     color: rgba(var(--light-color), 0.32) !important;
+    cursor: pointer;
 }
 
 form.form .input-group .input-hide {
@@ -366,18 +384,13 @@ form.form .button-group {
 
 .sidebar .sidebar-link {
     margin-top: 42px;
-    height: -webkit-fill-available;
-    padding-bottom: 42px;
-}
-
-.sidebar .sidebar-link .wrapper {
     gap: 10px;
 }
 
 .sidebar .sidebar-link .link-item,
 .sidebar .sidebar-link-logout .link-item {
     width: 100%;
-    padding: 15px;
+    padding: 15px !important;
     background-color: rgba(var(--third-dark-color), 1);
     border-radius: 6px;
     border: none;
